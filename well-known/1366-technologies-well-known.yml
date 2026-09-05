@@ -1,0 +1,129 @@
+generated: '2026-09-05'
+method: probed
+source: direct HTTP probes of every host this record knows (2026-09-05)
+note: >-
+  No document was found. Every path on every host returned HTTP 202 with a SiteGround robot
+  challenge (`sg-captcha: challenge`, `x-robots-tag: noindex`, a 169-byte HTML meta-refresh to
+  /.well-known/sgcaptcha/), not a document — including /robots.txt and /sitemap.xml. That is a
+  JavaScript-solved bot wall, which this pipeline does not evade, so these statuses record what
+  our crawler was served rather than proving absence at the origin. 1366 Technologies is a solar
+  silicon wafer manufacturer that merged into CubicPV in June 2021; it has no developer program,
+  no GitHub organisation and no published package in any registry, so no /.well-known API surface
+  is expected here. NO WellKnown or SecurityTxt pointer is emitted from this file — nothing
+  returned a real document.
+hosts:
+- host: 1366tech.com
+  note: Legacy company domain; TLS certificate expired 2024-05-04, probed with verification disabled.
+  documents:
+  - path: /.well-known/security.txt
+    status: 202
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 202
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 202
+    file: null
+  - path: /.well-known/api-catalog
+    status: 202
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 202
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 202
+    file: null
+  - path: /.well-known/agent.json
+    status: 202
+    file: null
+- host: www.1366tech.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 202
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 202
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 202
+    file: null
+  - path: /.well-known/api-catalog
+    status: 202
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 202
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 202
+    file: null
+  - path: /.well-known/agent.json
+    status: 202
+    file: null
+- host: cubicpv.com
+  note: Surviving corporate host after the 2021 merger; wired as the Website pointer.
+  documents:
+  - path: /.well-known/security.txt
+    status: 202
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 202
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 202
+    file: null
+  - path: /.well-known/api-catalog
+    status: 202
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 202
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 202
+    file: null
+  - path: /.well-known/agent.json
+    status: 202
+    file: null
+contract_discovery:
+  note: >-
+    STEP 0b run in full on 2026-09-05 against every host known to this record. There is no
+    baseURL and no OpenAPI servers[] host, because the record carries no APIs.
+  probes:
+  - path: /openapi.json
+    hosts: [1366tech.com, www.1366tech.com, cubicpv.com]
+    status: 202
+    result: robot challenge, not a spec
+  - path: /swagger.json
+    hosts: [1366tech.com, www.1366tech.com, cubicpv.com]
+    status: 202
+    result: robot challenge, not a spec
+  - path: /api-docs
+    hosts: [1366tech.com, www.1366tech.com, cubicpv.com]
+    status: 202
+    result: robot challenge, not a spec
+  - path: /llms.txt
+    hosts: [1366tech.com, www.1366tech.com, cubicpv.com]
+    status: 202
+    result: robot challenge, not an llms.txt
+  - path: /developers
+    hosts: [1366tech.com, www.1366tech.com, cubicpv.com]
+    status: 202
+    result: robot challenge
+  - path: /api
+    hosts: [1366tech.com, www.1366tech.com, cubicpv.com]
+    status: 202
+    result: robot challenge
+  graphql: not probed — no /graphql surface is named anywhere in the company's public material
+  mcp: not probed — no MCP endpoint is named anywhere in the company's public material
+  ogc: >-
+    not probed — no evidence points at an OGC surface; no WMS/WFS/WCS/WMTS/CSW or "OGC API"
+    language appears in any material about this company, and blind path patterns are out of bounds
+  registries:
+  - registry: npm
+    query: cubicpv
+    results: 0
+  - registry: pypi
+    package: cubicpv
+    status: 404
+  - registry: github
+    query: "1366 technologies / cubicpv organisation"
+    results: no organisation for either name

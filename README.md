@@ -64,5 +64,9 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-1366 Technologies is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/1366-technologies_stock/
+1366 Technologies was a Bedford, Massachusetts solar manufacturing company founded in 2008 out of MIT, best known for its patented Direct Wafer process — a kerfless method that casts multicrystalline silicon photovoltaic wafers directly from molten silicon rather than sawing them from an ingot. In June 2021 it merged with Dallas-based Hunt Perovskite Technologies to form **CubicPV**, which cancelled its planned 10 GW US wafer factory in February 2024 and refocused on perovskite–silicon tandem modules.
+
+It is a materials and equipment manufacturer, not a software vendor. No developer program, public API, SDK, GitHub organisation, published package or machine-readable API contract was found on any host in a full contract-discovery pass on 2026-09-05, and the company's own domain `1366tech.com` has served a TLS certificate that expired 2024-05-04 ever since.
+
+- https://cubicpv.com/ — surviving corporate site after the merger
+- https://1366tech.com/ — legacy company domain (expired TLS certificate; last HTTP 200 archive capture 2021-08-11)

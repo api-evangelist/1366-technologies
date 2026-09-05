@@ -1,0 +1,47 @@
+generated: '2026-09-05'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml hosts plus the company's own legacy domain 1366tech.com
+note: >-
+  1366 Technologies merged into CubicPV (June 2021); cubicpv.com is the surviving corporate host and
+  is wired as the Website pointer. 1366tech.com is still registered and still resolves, and its
+  Microsoft 365 mail records are live, but its TLS certificate expired 2024-05-04 and has not been
+  renewed, so every browser refuses the connection. Both hosts sit behind a SiteGround robot
+  challenge (HTTP 202, sg-captcha: challenge) that answers every path, so no HTTP body could be
+  read; the TLS and DNS findings below are unaffected by that wall.
+hosts:
+- host: cubicpv.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 31 10:38:26 2026 GMT
+  cert_issuer: "Let's Encrypt"
+  cert_valid: true
+  hsts: false
+  note: SiteGround robot challenge answers 202 on every path probed.
+- host: 1366tech.com
+  https: false
+  tls_version: TLSv1.3
+  cert_subject: CN=*.1366tech.com
+  cert_issuer: "Let's Encrypt R3"
+  cert_expires: May  4 21:01:29 2024 GMT
+  cert_valid: false
+  hsts: false
+  note: >-
+    Certificate expired 2024-05-04 and was never renewed; curl and any browser refuse the
+    connection without -k. The last HTTP 200 capture of this site in the Internet Archive is
+    2021-08-11, weeks after the CubicPV merger closed.
+domains:
+- domain: cubicpv.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+- domain: 1366tech.com
+  dnssec: false
+  caa: []
+  spf: true
+  spf_record: "v=spf1 include:spf.protection.outlook.com -all"
+  dmarc: true
+  dmarc_policy: quarantine
+  mx: 1366tech-com.mail.protection.outlook.com
+  note: Mail is still live on Microsoft 365 even though the web presence is not.

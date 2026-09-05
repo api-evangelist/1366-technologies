@@ -1,7 +1,18 @@
 aid: 1366-technologies
 name: 1366 Technologies
-description: '1366 Technologies is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  1366 Technologies was a Bedford, Massachusetts solar manufacturing company founded in 2008 out of
+  MIT, best known for its patented Direct Wafer process — a kerfless method that casts multicrystalline
+  silicon photovoltaic wafers directly from molten silicon in a mold, skipping the ingot-growing and
+  wire-sawing steps that waste roughly half the silicon in conventional wafer production. The company
+  raised venture funding from North Bridge Venture Partners, Polaris Partners, Hanwha, Tokuyama and
+  Breakthrough Energy Ventures, and operated a demonstration line in Bedford. In June 2021 it merged
+  with Dallas-based Hunt Perovskite Technologies to form CubicPV, combining Direct Wafer silicon with
+  printed perovskite to pursue tandem modules; CubicPV cancelled its planned 10 GW US wafer factory in
+  February 2024 and refocused on perovskite tandem development. 1366 Technologies is a materials and
+  equipment manufacturer, not a software vendor: it never operated a developer program, public API,
+  SDK or machine-readable API contract, and its own domain 1366tech.com has served an expired TLS
+  certificate since May 2024.
 url: https://raw.githubusercontent.com/api-evangelist/1366-technologies/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +23,13 @@ created: '2026-09-05'
 modified: '2026-09-05'
 tags:
 - Company
+- Solar
+- Photovoltaics
+- Renewable Energy
+- Manufacturing
+- Semiconductors
+- Materials Science
+- Cleantech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/1366-technologies-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/1366-technologies_stock/
+  url: https://cubicpv.com/
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    1366 Technologies is a solar silicon wafer manufacturer that ceased to exist as an independent
+    company when it merged into CubicPV in June 2021, and its own domain 1366tech.com has served a
+    TLS certificate that expired on 2024-05-04 ever since, so there is no company web presence left
+    to carry an API surface — the Website pointer now resolves to the surviving CubicPV host.
+  evidence:
+  - url: https://1366tech.com/
+    status: 0
+  - url: https://cubicpv.com/
+    status: 202
+  - url: https://forgeglobal.com/1366-technologies_stock/
+    status: 403
+  checked: '2026-09-05'
