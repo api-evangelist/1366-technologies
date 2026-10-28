@@ -64,9 +64,79 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-1366 Technologies was a Bedford, Massachusetts solar manufacturing company founded in 2008 out of MIT, best known for its patented Direct Wafer process — a kerfless method that casts multicrystalline silicon photovoltaic wafers directly from molten silicon rather than sawing them from an ingot. In June 2021 it merged with Dallas-based Hunt Perovskite Technologies to form **CubicPV**, which cancelled its planned 10 GW US wafer factory in February 2024 and refocused on perovskite–silicon tandem modules.
+1366 Technologies was a Bedford, Massachusetts solar manufacturing company founded in 2008 out of MIT, best known for its patented Direct Wafer process — a kerfless method that casts multicrystalline silicon photovoltaic wafers directly from molten silicon in a mold, skipping the ingot-growing and wire-sawing steps that waste roughly half the silicon in conventional wafer production. The company raised venture funding from North Bridge Venture Partners, Polaris Partners, Hanwha, Tokuyama and Breakthrough Energy Ventures, and operated a demonstration line in Bedford. In June 2021 it merged with Dallas-based Hunt Perovskite Technologies to form CubicPV, combining Direct Wafer silicon with printed perovskite to pursue tandem modules; CubicPV cancelled its planned 10 GW US wafer factory in February 2024 and refocused on perovskite tandem development. 1366 Technologies is a materials and equipment manufacturer, not a software vendor: it never operated a developer program, public API, SDK or machine-readable API contract, and its own domain 1366tech.com has served an expired TLS certificate since May 2024.
 
-It is a materials and equipment manufacturer, not a software vendor. No developer program, public API, SDK, GitHub organisation, published package or machine-readable API contract was found on any host in a full contract-discovery pass on 2026-09-05, and the company's own domain `1366tech.com` has served a TLS certificate that expired 2024-05-04 ever since.
+**Areas:** Company · Solar · Photovoltaics · Renewable Energy · Manufacturing · Semiconductors · Materials Science · Cleantech
 
-- https://cubicpv.com/ — surviving corporate site after the merger
-- https://1366tech.com/ — legacy company domain (expired TLS certificate; last HTTP 200 archive capture 2021-08-11)
+## 1366 Technologies on APIs.io
+
+Everything profiled for 1366 Technologies is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/1366-technologies/](https://apis.io/providers/1366-technologies/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [1366 Technologies Domain Security](https://apis.io/security/1366-technologies/1366-technologies-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://cubicpv.com/)
+
+## API Evangelist rating
+
+**Kin Score 3.2** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 44.6 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.9** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.9** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/1366-technologies/](https://apis.io/providers/1366-technologies/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 1366 Technologies: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/1366-technologies/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
